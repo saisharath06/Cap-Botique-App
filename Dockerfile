@@ -5,4 +5,4 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 # ENV NODE_ENV=production
-CMD ["npm","app.js"]
+ENTRYPOINT node server_init.js
